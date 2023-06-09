@@ -1,4 +1,4 @@
-import knex from 'knex';
+import { knex } from 'knex';
 import test from 'node:test';
 import { Admin } from '../Admin';
 import { ConsumerBuilder } from '../Consumer';

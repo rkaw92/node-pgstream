@@ -16,7 +16,7 @@ npm install pgstream knex
 ## Produce messages
 
 ```typescript
-import knex from 'knex';
+import { knex } from 'knex';
 import { Admin, ProducerBuilder, PendingMessage } from 'pgstream';
 const db = knex({
     client: 'pg',
@@ -57,7 +57,7 @@ db.transaction(async (trx) => {
 ## Consume messages
 
 ```typescript
-import knex from 'knex';
+import { knex } from 'knex';
 import { Admin, ProducerBuilder, PendingMessage } from 'pgstream';
 const db = knex({
     client: 'pg',
